@@ -1,0 +1,5 @@
+四个JDK中使用模板方法模式的API：
+1.JFrame中paint（Graphics graphics）钩子重写。
+2.Applet中init（）/start（）等钩子方法的重写。
+3.InputStream类有一个read（）方法，是由子类实现，而这个方法又会被read（byte b[],int off,int len）模板方法使用。
+4.排序sort（）方法控制算法（compareTo（）和swap（）方法），依赖一个Comparable类提供compareTo（）的实现。
